@@ -7,7 +7,18 @@
 	<packaging>war</packaging>
 	<name>Hello World Web Application Repository</name>
 	<description>Simplest possible Java Webapp</description>
-
+	
+	<profiles>
+		<profile>
+			<id>sonar</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<sonar.host.url>http://localhost:8888/</sonar.host.url>
+			</properties>
+		</profile>
+	</profiles>
 	<build>
 		<plugins>
 			<plugin>
@@ -25,5 +36,14 @@
 			</plugin>
 		</plugins>
 	</build>
-
+<distributionManagement>
+<repository>
+	<id>Maven-releases</id>
+	<url>http://localhost:7374/sravani/repository/New_project_release/</url>
+</repository>
+<snapshotRepository>
+	<id>Maven-snapshots</id>
+	<url>http://localhost:7374/sravani/repository/New_Project_snapshot/</url>
+</snapshotRepository>
+</distributionManagement>
 </project>
