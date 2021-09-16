@@ -38,12 +38,12 @@
 	</build>
 <distributionManagement>
 <repository>
-	<id>Maven-releases</id>
-	<url>http://localhost:7374/sravani/repository/New_project_release/</url>
+	<id>maven-releases</id>
+	<url>http://localhost:7374/sravani/repository/maven-releases/</url>
 </repository>
 <snapshotRepository>
-	<id>Maven-snapshots</id>
-	<url>http://localhost:7374/sravani/repository/New_Project_snapshot/</url>
+	<id>maven-snapshots</id>
+	<url>http://localhost:7374/sravani/repository/maven-snapshots/</url>
 </snapshotRepository>
 </distributionManagement>
 </project>
